@@ -196,7 +196,7 @@ body {
 
 /* --- Seção Hero --- */
 .hero {
-  padding: 100px 0;
+  padding: 60px 0; /* ESPAÇAMENTO DIMINUÍDO AQUI */
   color: var(--white);
   text-align: left;
 }
@@ -331,7 +331,7 @@ body {
   color: var(--dark-blue);
 }
 
-/* --- NOVOS ESTILOS: Seção Sobre Aprimorada --- */
+/* --- Seção Sobre Aprimorada --- */
 .mission-vision-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -339,7 +339,7 @@ body {
   margin-top: 48px;
 }
 .value-card {
-  background-color: #f1f5f9; /* Um fundo levemente diferente para destaque */
+  background-color: #f1f5f9;
   padding: 24px;
   border-radius: var(--radius);
   text-align: center;
@@ -354,40 +354,9 @@ body {
   color: var(--slate);
 }
 
-/* --- NOVOS ESTILOS: Seção de Depoimentos --- */
-#depoimentos {
-  background-color: var(--white); /* Fundo branco para contrastar */
-}
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.testimonial-card {
-  background-color: var(--bg);
-  padding: 30px;
-  border-radius: var(--radius);
-  border: 1px solid #e2e8f0;
-  position: relative;
-}
-.testimonial-card p.quote {
-  font-size: 15px;
-  color: var(--slate);
-  font-style: italic;
-  margin-bottom: 16px;
-  padding-left: 20px;
-  border-left: 3px solid var(--accent-blue);
-}
-.testimonial-card footer {
-  text-align: right;
-  font-weight: 600;
-  color: var(--dark-blue);
-  font-size: 14px;
-}
-
 /* --- Rodapé --- */
 footer {
-  margin-top: 0; /* Ajustado pois a seção anterior pode ser branca */
+  margin-top: 48px;
   padding: 60px 0;
   background-color: var(--dark-blue);
   color: var(--white);
@@ -446,9 +415,6 @@ footer {
   .mission-vision-grid {
     grid-template-columns: 1fr;
   }
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
 }
 @media (max-width: 768px) {
   .wrap {
@@ -462,7 +428,7 @@ footer {
     display: flex;
   }
   .hero {
-    padding: 60px 0;
+    padding: 40px 0; /* ESPAÇAMENTO DIMINUÍDO AQUI TAMBÉM */
   }
   .hero-content h2 {
     font-size: 36px;
