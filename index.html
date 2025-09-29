@@ -1,143 +1,287 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>G2Net - Soluções Tecnológicas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>G2Network - Soluções Tecnológicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-
-<body>
-  <header class="wrap">
-    <div class="nav">
-      <div class="brand">
-        <div class="logo">
-          <img class="logo-efect" src="img/Logo_g2.jpeg" alt="Logo G2Network" > 
+  <body>
+    <header class="header">
+      <div class="wrap nav-container">
+        <div class="brand">
+          <a href="#" class="logo-link">
+            <img class="logo-img" src="img/Logo_g2.jpeg" alt="Logo G2Network" />
+          </a>
         </div>
-        <div>
-          <h1>G2Network</h1> 
-          <div class="title">Soluções Tecnológicas</div>
+
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a class="cta" href="#contato">Solicitar Orçamento</a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
         </div>
       </div>
+    </header>
 
+    <div class="mobile-nav" id="mobile-nav">
       <nav>
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
+        <a href="#" class="nav-link">Início</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
       </nav>
-
-      <a class="cta" href="#contato">Solicitar Orçamento</a>
     </div>
-  </header>
 
-  <main class="wrap">
-    <section class="hero" aria-label="Hero">
-      <div class="hero-grid">
-        <div>
-          <h2>Soluções Tecnológicas para o Futu</h2>
-          <p> A G2Net oferece soluções inovadoras em tecnologia para impulsionar o crescimento do seu negócio e garantir sua presença digital de forma eficiente e segura.</p>
-          <a class="btn-primary" href="#servicos">Saiba Mais</a>
-        </div>
-        <div class="hero-card">
-          <h4 class="small">Destaques</h4>
-          <p class="small">Serviços personalizados, suporte dedicado 24/7 e infraestrutura escalável para empresas de todos os tamanhos.</p>
-          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.08);margin:14px 0">
-          <div style="display:flex;flex-direction:column;gap:10px">
-            <div class="small">Cloud Computing — Soluções de nuvem escaláveis</div>
-            <div class="small">Cibersegurança — Monitoramento e proteção</div>
-            <div class="small">Suporte — Solução e assistência </div>
+    <main>
+      <section class="hero wrap" aria-label="Hero">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h2>Soluções Tecnológicas que Impulsionam o Futuro</h2>
+            <p>
+              A G2Net oferece soluções inovadoras em tecnologia para o
+              crescimento do seu negócio, garantindo uma presença digital
+              eficiente e segura.
+            </p>
+            <a class="btn-primary" href="#servicos">Conheça Nossas Soluções</a>
+          </div>
+          <div class="hero-card">
+            <h4>Destaques Tecnológicos</h4>
+            <p>
+              Serviços personalizados, suporte dedicado contínuo e
+              infraestrutura escalável para empresas de todos os tamanhos.
+            </p>
+            <hr />
+            <div class="highlights">
+              <span>Cloud Computing — Soluções de nuvem escaláveis</span>
+              <span>Cibersegurança — Monitoramento e proteção avançada</span>
+              <span>Suporte Dedicado — Resolução e assistência ágil</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="sobre">
-      <div class="section-title">
-        <h3>Sobre a G2Net</h3>
-        <p class="lead">Desde 2010, a G2Net tem sido pioneira em soluções tecnológicas personalizadas para empresas de todos os tamanhos. Nossa equipe combina experiência técnica com conhecimento de mercado para entregar resultados excepcionais.</p>
-      </div>
-    </section>
+      <section id="sobre" class="wrap content-section">
+        <div class="section-title">
+          <h3>Sobre a G2Net</h3>
+          <p class="lead">
+            Desde 2010, somos pioneiros em soluções tecnológicas personalizadas.
+            Nossa equipe combina experiência técnica e visão de mercado para
+            entregar resultados excepcionais.
+          </p>
+        </div>
+      </section>
 
-    <section id="servicos">
-      <div class="section-title">
-        <h3>Nossos Serviços</h3>
-        <p class="lead">Criamos soluções sob medida para transformar ideias em resultados reais. Veja algumas áreas em que atuamos:</p>
-      </div>
-
-      <div class="services-grid">
-        <article class="card">
-          <h4>Cloud Computing</h4>
-          <p>Soluções de nuvem escaláveis e seguras para armazenamento, processamento e gerenciamento de dados da sua empresa, com suporte técnico 24/7.</p>
-        </article>
-
-        <article class="card">
-          <h4>Cibersegurança</h4>
-          <p>Proteja seus dados e sistemas contra ameaças digitais com nossas soluções avançadas de segurança, monitoramento constante e prevenção de ataques.</p>
-        </article>
-
-        <article class="card">
-          <h4>Suporte</h4>
-          <p>Resolva seus problemas técnicos rapidamente com nosso suporte especializado, atendimento ágil e soluções personalizadas.</p>
-        </article>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-title">
-        <h3>Por que nos escolher</h3>
-        <p class="lead">Equipe especializada, tecnologia de ponta e suporte dedicado para manter seu negócio protegido e em crescimento.</p>
-      </div>
-
-      <div class="why-grid">
-        <div class="feature">
-          <div class="icon">⚙️</div>
-          <h5>Suporte Dedicado</h5>
-          <p class="small">Nossa equipe de suporte técnico está disponível 24 horas por dia, 7 dias por semana, para resolver qualquer problema com rapidez e eficiência.</p>
+      <section id="servicos" class="wrap content-section">
+        <div class="section-title">
+          <h3>Nossos Serviços</h3>
+          <p class="lead">
+            Criamos soluções sob medida para transformar ideias em resultados
+            reais. Conheça nossas principais áreas de atuação:
+          </p>
         </div>
 
-        <div class="feature">
-          <div class="icon">🔒</div>
-          <h5>Tecnologia de Ponta</h5>
-          <p class="small">Utilizamos as mais recentes tecnologias e ferramentas do mercado para garantir soluções modernas, eficientes e preparadas para o futuro.</p>
+        <div class="services-grid">
+          <article class="card">
+            <h4>Cloud Computing</h4>
+            <p>
+              Soluções de nuvem escaláveis e seguras para armazenamento,
+              processamento e gerenciamento de dados, com suporte técnico
+              especializado.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Cibersegurança</h4>
+            <p>
+              Proteja seus ativos digitais com nossas soluções avançadas de
+              segurança, monitoramento constante e prevenção proativa de
+              ataques.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Suporte Especializado</h4>
+            <p>
+              Resolva problemas técnicos rapidamente com nosso suporte ágil,
+              atendimento dedicado e soluções personalizadas para sua empresa.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Desenvolvimento de Software</h4>
+            <p>
+              Criamos aplicações web e mobile sob medida, utilizando as
+              tecnologias mais modernas para entregar sistemas robustos e
+              intuitivos.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Consultoria em TI</h4>
+            <p>
+              Oferecemos orientação estratégica para otimizar sua infraestrutura
+              de TI, reduzir custos e alinhar a tecnologia aos seus objetivos de
+              negócio.
+            </p>
+          </article>
+
+          <article class="card">
+            <h4>Infraestrutura de Redes</h4>
+            <p>
+              Projetamos, implementamos e gerenciamos redes corporativas seguras
+              e de alta performance, garantindo conectividade e estabilidade.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap content-section">
+        <div class="section-title">
+          <h3>Por que nos escolher?</h3>
+          <p class="lead">
+            Equipe especializada, tecnologia de ponta e suporte dedicado para
+            manter seu negócio protegido e em constante crescimento.
+          </p>
         </div>
 
-        <div class="feature">
-          <div class="icon">👥</div>
-          <h5>Equipe Especializada</h5>
-          <p class="small">Contamos com profissionais qualificados e certificados nas principais tecnologias do mercado, prontos para atender suas necessidades.</p>
+        <div class="why-grid">
+          <div class="feature">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <h5>Suporte Dedicado</h5>
+            <p>
+              Nossa equipe está disponível em tempo integral para resolver
+              problemas com rapidez, garantindo a continuidade do seu negócio.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" x2="12" y1="22.08" y2="12" />
+              </svg>
+            </div>
+            <h5>Tecnologia de Ponta</h5>
+            <p>
+              Utilizamos as mais recentes tecnologias para garantir soluções
+              modernas, eficientes e preparadas para os desafios do futuro.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h5>Equipe Especializada</h5>
+            <p>
+              Contamos com profissionais qualificados e certificados, prontos
+              para entender e atender as necessidades específicas do seu
+              negócio.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer id="contato">
       <div class="wrap">
         <div class="footer-grid">
-          <div>
+          <div class="footer-col">
             <h2>G2Network</h2>
-            <p class="muted">Transformando negócios através da tecnologia. Soluções inovadoras para empresas de todos os portes.</p>
+            <p class="muted">
+              Transformando negócios através da tecnologia. Soluções inovadoras
+              para empresas de todos os portes.
+            </p>
           </div>
 
-          <div>
-            <h3>Links Rápidos</h3>
-            <p class="muted">Início • Serviços • Sobre • Contato</p>
+          <div class="footer-col">
+            <h3>Navegação</h3>
+            <ul class="footer-links">
+              <li><a href="#">Início</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+            </ul>
           </div>
 
-          <div>
+          <div class="footer-col">
             <h3>Contato</h3>
-            <p class="muted">Rua do Tesouro, 23, São Paulo - SP<br><br>(11) 99994-9274<br><br>contato@g2net.com.br</p>
+            <p class="muted">
+              contato@g2net.com.br<br />(11) 99994-9274<br />Rua do Tesouro, 23,
+              São Paulo - SP
+            </p>
           </div>
         </div>
 
-        <div style="margin-top:18px;text-align:center;color:rgba(255,255,255,0.7);font-size:13px">© 2025 G2Net. Todos os direitos reservados.</div>
+        <div class="footer-bottom">
+          © 2025 G2Network. Todos os direitos reservados.
+        </div>
       </div>
     </footer>
-  </main>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
