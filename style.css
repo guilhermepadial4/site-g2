@@ -3,11 +3,11 @@
   --dark-blue: #0a192f;
   --primary-blue: #1e3a8a;
   --accent-blue: #3b82f6;
-  --light-slate: #ccd6f6;
-  --slate: #464c5f;
+  --light-slate: #ccd6f6; /* Texto claro principal */
+  --slate: #8892b0; /* Cor de texto secundária clara */
   --white: #ffffff;
-  --bg: #eff6ff;
-  --card-bg: #ffffff;
+  --bg: #0a192f; /* Fundo principal escuro */
+  --card-bg: #112240; /* <<< MUDANÇA: Fundo dos cards alterado para um azul mais escuro */
   --shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   --radius: 8px;
   --max-width: 1100px;
@@ -24,7 +24,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg);
-  color: #0f172a;
+  color: var(--light-slate); /* Cor de texto padrão clara */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
@@ -61,10 +61,10 @@ body {
   padding: 12px 0;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   background-color: var(--bg);
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* <<< MUDANÇA: Borda mais suave */
 }
 .header.scrolled {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra um pouco mais visível em fundo escuro */
 }
 .nav-container {
   display: flex;
@@ -91,7 +91,7 @@ body {
   list-style: none;
 }
 .desktop-nav a {
-  color: var(--slate);
+  color: var(--light-slate);
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -104,11 +104,11 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primary-blue);
+  background-color: var(--accent-blue);
   transition: width 0.3s ease;
 }
 .desktop-nav a:hover {
-  color: var(--dark-blue);
+  color: var(--white);
 }
 .desktop-nav a:hover::after {
   width: 100%;
@@ -143,12 +143,12 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 1002; /* Botão fica acima de tudo */
+  z-index: 1002;
 }
 .bar {
   width: 100%;
   height: 3px;
-  background-color: var(--dark-blue);
+  background-color: var(--light-slate);
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
 }
@@ -164,18 +164,16 @@ body {
 }
 
 .mobile-nav {
-  position: absolute; /* Posição relativa ao header */
-  top: 100%; /* Começa logo abaixo do container do header */
+  position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
   background-color: var(--bg);
-  z-index: 1001; /* Fica abaixo do botão, mas acima do resto */
+  z-index: 1001;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.1);
   padding: 20px 0;
-
-  /* Animação */
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
@@ -195,7 +193,7 @@ body {
   gap: 15px;
 }
 .mobile-nav .nav-link {
-  color: var(--dark-blue);
+  color: var(--light-slate);
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
@@ -203,10 +201,10 @@ body {
   transition: color 0.3s ease;
 }
 .mobile-nav .nav-link:hover {
-  color: var(--primary-blue);
+  color: var(--accent-blue);
 }
 
-/* --- Seções de Conteúdo (sem alterações) --- */
+/* --- Seções de Conteúdo --- */
 .hero {
   padding: 60px 0;
   text-align: left;
@@ -220,13 +218,13 @@ body {
 .hero-content h2 {
   font-size: 48px;
   margin-bottom: 16px;
-  color: var(--dark-blue);
+  color: var(--white);
   line-height: 1.2;
 }
 .hero-content p {
   font-size: 18px;
   margin-bottom: 24px;
-  color: var(--slate);
+  color: var(--light-slate);
   max-width: 600px;
 }
 .btn-primary {
@@ -278,12 +276,12 @@ body {
 }
 .section-title h3 {
   font-size: 32px;
-  color: var(--dark-blue);
+  color: var(--white);
   margin-bottom: 12px;
 }
 .lead {
   font-size: 18px;
-  color: var(--slate);
+  color: var(--light-slate);
   max-width: 760px;
   margin: 0 auto;
 }
@@ -295,25 +293,25 @@ body {
 }
 .card,
 .feature {
-  background-color: var(--card-bg);
+  background-color: var(--card-bg); /* <<< MUDANÇA: Fundo do card */
   border-radius: var(--radius);
   padding: 30px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* <<< MUDANÇA: Borda mais suave */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover,
 .feature:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.1);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.3); /* Sombra mais visível para destaque */
 }
 .card h4 {
   font-size: 20px;
   margin-bottom: 8px;
-  color: var(--dark-blue);
+  color: var(--white); /* <<< MUDANÇA: Título do card para branco */
 }
 .card p,
 .feature p {
-  color: var(--slate);
+  color: var(--light-slate); /* <<< MUDANÇA: Parágrafo do card para claro */
   font-size: 15px;
 }
 .feature {
@@ -337,7 +335,7 @@ body {
 .feature h5 {
   font-size: 18px;
   margin-bottom: 8px;
-  color: var(--dark-blue);
+  color: var(--white); /* <<< MUDANÇA: Título da feature para branco */
 }
 .mission-vision-grid {
   display: grid;
@@ -346,25 +344,29 @@ body {
   margin-top: 48px;
 }
 .value-card {
-  background-color: var(--card-bg);
+  background-color: var(--card-bg); /* <<< MUDANÇA: Fundo do card de valor */
   padding: 24px;
   border-radius: var(--radius);
   text-align: center;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* <<< MUDANÇA: Borda mais suave */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .value-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.1);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.3); /* Sombra mais visível para destaque */
 }
 .value-card h4 {
   font-size: 18px;
-  color: var(--primary-blue);
+  color: var(
+    --accent-blue
+  ); /* <<< MUDANÇA: Título do card de valor para accent-blue (destaque) */
   margin-bottom: 12px;
 }
 .value-card p {
   font-size: 14px;
-  color: var(--slate);
+  color: var(
+    --light-slate
+  ); /* <<< MUDANÇA: Parágrafo do card de valor para claro */
 }
 
 /* --- Rodapé --- */
@@ -394,8 +396,6 @@ footer {
   font-size: 15px;
   line-height: 1.7;
 }
-
-/* Estilo genérico para TODOS os links dentro de .muted (email, telefone e endereço) */
 .muted a {
   color: var(--light-slate);
   text-decoration: none;
@@ -405,7 +405,6 @@ footer {
   color: var(--accent-blue);
   text-decoration: underline;
 }
-
 .footer-links {
   list-style: none;
   display: flex;
@@ -428,7 +427,7 @@ footer {
   font-size: 14px;
 }
 
-/* --- Media Queries (sem alterações) --- */
+/* --- Media Queries (ajustes para mobile se necessário) --- */
 @media (max-width: 1000px) {
   .hero-grid {
     grid-template-columns: 1fr;
