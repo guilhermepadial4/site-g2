@@ -76,7 +76,7 @@ body {
   align-items: center;
 }
 .logo-img {
-  width: 150px;
+  width: 180px; /* ALTERADO: Aumentado de 150px para 180px (20%) */
   height: auto;
   border-radius: var(--radius);
   object-fit: cover;
@@ -216,7 +216,7 @@ body {
   align-items: center;
 }
 .hero-content h2 {
-  font-size: 48px;
+  font-size: 38px; /* ALTERADO: Diminuído de 48px para 38px */
   margin-bottom: 16px;
   color: var(--white);
   line-height: 1.2;
@@ -455,7 +455,7 @@ footer {
     padding: 40px 0;
   }
   .hero-content h2 {
-    font-size: 36px;
+    font-size: 30px; /* ALTERADO: Ajustado para 30px (era 36px) */
   }
   .hero-content p {
     font-size: 16px;
