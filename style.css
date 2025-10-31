@@ -446,6 +446,11 @@ footer {
   .header-actions .cta {
     display: none;
   }
+
+  .logo-img {
+    width: 150px;
+  }
+
   .menu-toggle {
     display: flex;
   }
